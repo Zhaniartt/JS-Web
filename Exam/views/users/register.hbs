@@ -1,0 +1,25 @@
+ {{#each errorMessages}}
+   <section class="notifications">
+           <p class="notification-message">{{this}}</p>
+        </section>
+{{/each}}
+ 
+ <form action="/register" method="POST">
+            <h1>Register</h1>
+
+            <p>Personal info</p>
+            <label for="usernmae">Username</label>
+            <input id="username" type="text" placeholder="zhani" name="username">
+
+            <label for="usernmae">Password</label>
+            <input id="password" type="password" placeholder="******" name="password">
+
+            <label for="repeat-password">Repeat Password</label>
+            <input id="repeat-password" type="password" placeholder="******" name="repeatPassword">
+            <hr>
+            <p>Account</p>
+            <label for="usernmae">Amount</label>
+            <input id="username" type="text" placeholder="$125.90" name="amount">
+
+            <button type="submit">Register</button>
+</form>
